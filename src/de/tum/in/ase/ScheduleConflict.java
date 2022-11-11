@@ -8,7 +8,7 @@ public class ScheduleConflict {
 	public static boolean divisibility(int lastDay, int modulus) {
 //		return false if the method gets an invalid input
 //		non-positive number or modulus as an invalid input
-		if (lastDay < 0 || modulus < 0) {
+		if (lastDay < 0 || modulus <= 0) {
 			return false;
 		} else if (lastDay % modulus != 0) {
 			return false;
